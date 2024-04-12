@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'FoulisGreek', 'Slimamif', 'RomanceFatal',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'FoulisGreek';
+  src: url('./fonts/FoulisGreek-3Wry.ttf') format('truetype');
+  /* Add additional font formats if necessary */
+  /* Specify the correct path to the font files */
+}
+
+@font-face {
+  font-family: 'Slimamif';
+  src: url('./fonts/Slimamif-2RG8.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RomanceFatal';
+  src: url('./fonts/RomanceFatalW1G.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VAG-HurryPen';
+  src: url('./fonts/VAG-HurryPen.otf') format('truetype');
+}
+
+
+
+@font-face {
+  font-family: 'Miama';
+  src: url('./fonts/Miama.ttf') format('truetype');
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.test {
+  color:darkblue;
+  font-family: 'CustomFont'  
+}
+
+.flip-button {
+  border: 0px;
+    margin-left: auto;
+    margin-top: auto;
+    background: #ffffff17;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    width: 75px;
+    padding: 10px;
+    height: 75px;
+}
