@@ -4,6 +4,7 @@ import './App.css';
 import ImageCarousel from './components/ImageCarouses'
 import InvitationFront, {Card} from './components/Invitation';
 import Locations from './components/Locations';
+import Countdown from './components/Countdown';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <ImageCarousel/>
         {/* Invitation/> */}
         <Card onClick={console.log('click')}/>
+        <Countdown/>
         <Locations url={'123'}/>
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
