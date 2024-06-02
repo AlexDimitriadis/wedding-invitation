@@ -52,7 +52,7 @@ code {
   border: 0px;
     margin-left: auto;
     margin-top: auto;
-    background: #ffffff17;
+    background: #00000075;
     position: absolute;
     right: 1px;
     bottom: 1px;
@@ -60,3 +60,18 @@ code {
     padding: 10px;
     height: 75px;
 }
+
+.flower-deco {
+  opacity: 0.4;
+  position:absolute;
+  right:0px;
+  top:150px;
+  mix-blend-mode:multiply;
+  width:50%;
+}
+
+/* 
+
+.background > * {
+  mix-blend-mode:color-burn;
+}  */

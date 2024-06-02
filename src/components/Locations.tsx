@@ -5,27 +5,7 @@ interface LocationProps {
 }
   
 const Locations: React.FC<LocationProps> = ({ url }) => {
-    const getColor = (num: number): string => {
-      let color = 'white';
-      switch(num) {
-          case 1: 
-              color =  'beige'
-              break;
-          case 2:
-              color =  'powderblue'
-              break;
-          case 3:
-              color =  'green'
-              break;
-      }
-      return color;
-    }
-    const styles = {
-    backgroundColor:'white',
-    width: '100%',
-    height: 800,
-    };
-
+    
     return (
         <div>
 

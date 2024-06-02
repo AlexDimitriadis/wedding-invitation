@@ -1,6 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react';
-import watercolorBg from './../images/watercolor-blue.jpg'
-import flowerDeco from './../flower_deco.jpg'
+// import watercolorBgBL from './../images/watercolor-blue.jpg'
+import watercolorBg from './../images/paper-texture-2.jpg'
+import flowerDeco from './../images/flower_deco-wc.png'
 import Lavender from './../images/lavender.png'
 import './../index.css';
 import ReactCardFlip from "react-card-flip";
@@ -23,12 +24,16 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
 
     return (
       <div className="background" style={styles.background}>
-        <img src={OliveBranch} style={{width:250, color:'white'}} />
+        {/* <img src={OliveBranch} style={{width:250, color:'white'}} /> */}
+        <img  className="flower-deco" src={flowerDeco} style={{ color:'white'}} />
+
         <div style={styles.topSection.container}>
             <p style={styles.topSection.text}>Αλέξανδρος </p>
-            <p style={{...styles.topSection.text, fontSize:100}} >&</p>
+            <p style={styles.topSection.text} >&</p>
             <p style={styles.topSection.text}>Μαριάννα</p>
         </div>
+        
+        <h2 style={{...styles.middleSection.numberSmall, marginLeft:20}}>18:30</h2>
         <div style={styles.middleSection.container}>
             <div>
                 <h2 style={styles.middleSection.bordered}>ΣΑΒΒΑΤΟ</h2>  
@@ -38,7 +43,7 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
                 <h2 style={styles.middleSection.bordered}>ΑΥΓΟΥΣΤΟΥ</h2>
             </div>
         </div>
-        <h2 style={styles.middleSection.numberYear}>2024</h2>
+        <h2 style={styles.middleSection.numberSmall}>2024</h2>
         <div style={styles.bottomSection.container}>
             <p style={styles.bottomSection.text}>Σας περιμένουμε στο γάμο μας 31/08/24 στον Ιερό Ναό Κοιμήσεως της Θεοτόκου στη Σαλαμίνα </p>
             
@@ -65,7 +70,9 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
 
     return (
       <div className="background" style={styles.background}>
-        <img src={OliveBranch} style={{width:250, color:'white'}} />
+        {/* <img src={OliveBranch} style={{width:250, color:'black'}} /> */}
+        <img className='flower-deco' src={flowerDeco} style={{ color:'white'}} />
+
         <div style={styles.backSection.container}>
             <p style={styles.backSection.simpleText}>Θα χαρούμε να παρευρεθείτε στο γάμο μας</p>
             <p style={styles.backSection.simpleText} >που θα γίνει το Σάββατο 31 Αυγούστου στις 18:30</p>
@@ -73,8 +80,8 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
         </div>
         <div style={styles.backSection.container}>
             <p style={styles.backSection.simpleText}>Οι γονείς</p>
-            <p style={styles.backSection.simpleText} >Αθανάσιος & Ευμορφία Τσιώρα </p>
             <p style={styles.backSection.simpleText}>Αθανάσιος & Χρυσάνθη Δημητριάδου</p>
+            <p style={styles.backSection.simpleText} >Αθανάσιος & Ευμορφία Τσιώρα </p>
         </div>
         <div style={styles.backSection.container}>
             <p style={styles.backSection.simpleText}>Ο κουμπάρος</p>
@@ -90,10 +97,12 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
     </div>
     );
   }
-  //const font = 'FoulisGreek';
-  const font = 'Miama';
+//   const font = 'FoulisGreek';
+   const font = 'Miama';
 //const font = 'VAG-HurryPen';
-//const font = 'Slimamif';
+// const font = 'Slimamif';
+const textColor='rgba(0, 0, 0, 1)'
+const fontWeight='500'
 
 const styles={
     background:{
@@ -101,21 +110,25 @@ const styles={
         backgroundSize: 'cover', // Ensure image fills the entire div
         backgroundPosition: 'center', // Center the image within the div
         // background:'#E6B1F4',
-        height:800,
+        height:850,
         width:650,
         marginTop:100,
         marginBottom:100,
-        boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.2)',
+        boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5)',
     },
     topSection:{
         container:{
-            paddingTop:5
+            paddingTop:50
         },
         text:{
-            color:'white',
+            color:textColor,
             fontFamily:font,
-            fontSize:60,
-            margin:0                
+            padding:0,
+            //fontSize:60,
+            fontSize:70,
+            
+            margin:0    , 
+            fontWeight:fontWeight          
         }
     },
     middleSection:{
@@ -123,7 +136,7 @@ const styles={
             display:'flex',
             FlexDirection:'row',
             justifyContent:'space-evenly',
-            marginTop:20,
+            marginTop:0,
             alignItems:'center',           
         },
         bordered:{
@@ -133,18 +146,29 @@ const styles={
             borderBottomWidth:2,
             borderLeftWidth:0,
             borderRightWidth:0,
-            borderColor:'white',
+            borderColor:textColor,
             padding:5,
             width:200  ,
-            fontFamily:font          
+            fontFamily:font,
+            color:textColor ,
+            fontWeight:fontWeight          
+
         },
         number:{
             fontSize:100,
-            fontWeight:'200',
-            fontFamily:font
+            
+            //fontWeight:'200',
+            fontFamily:font,
+            color:textColor,
+            fontWeight:fontWeight          
+
         },
-        numberYear:{
-            fontFamily:font
+        numberSmall:{
+            fontFamily:font,
+            color:textColor,
+            fontWeight:fontWeight,
+            padding:0       
+
         }
     },
     bottomSection:{
@@ -152,31 +176,39 @@ const styles={
             margin:50
         },
         text:{
-            color:'white',
+            color:textColor,
             fontFamily:font,
-            fontSize:25,
-            margin:0
+            //fontSize:25,
+            fontSize:36,
+            margin:0,
+            fontWeight:fontWeight          
+
             
         }
     },
     backSection:{
         container:{
-            paddingTop:40
+            paddingTop:50
         },
         simpleText:{
-            color:'white',
+            color:textColor,
             fontFamily:font,
+            fontSize:40,
             margin:0,
+            fontWeight:fontWeight          
+
         },
         cursiveText:{
-            color:'white',
+            color:textColor,
             fontFamily:"Dancing Script",
-            fontSize:50,
+            fontSize:40,            
             margin:0,
+            fontWeight:400          
+
         }
     },
     flipBtnIcon:{
-        color:'white',
+        color:textColor,
         opacity: 0.8,
         fontSize:35, 
         marginTop:7
