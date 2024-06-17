@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wedding-invitation/static/css/main.9f3db3c7.css",
-    "main.js": "/wedding-invitation/static/js/main.a20152a6.js",
+    "main.css": "/wedding-invitation/static/css/main.1d76ea32.css",
+    "main.js": "/wedding-invitation/static/js/main.4cfe5c6e.js",
     "static/js/453.40063271.chunk.js": "/wedding-invitation/static/js/453.40063271.chunk.js",
     "static/media/paper-texture-2.jpg": "/wedding-invitation/static/media/paper-texture-2.39143d5e0e0f92bf38bd.jpg",
     "static/media/carousel3.jpg": "/wedding-invitation/static/media/carousel3.935d14ce1fa5967f3b22.jpg",
@@ -15,12 +15,12 @@
     "static/media/VAG-HurryPen.otf": "/wedding-invitation/static/media/VAG-HurryPen.eaf43a60702514998e7e.otf",
     "static/media/wedding-rings_white.svg": "/wedding-invitation/static/media/wedding-rings_white.6f7b863ca7925822e43f8397362f97d6.svg",
     "index.html": "/wedding-invitation/index.html",
-    "main.9f3db3c7.css.map": "/wedding-invitation/static/css/main.9f3db3c7.css.map",
-    "main.a20152a6.js.map": "/wedding-invitation/static/js/main.a20152a6.js.map",
+    "main.1d76ea32.css.map": "/wedding-invitation/static/css/main.1d76ea32.css.map",
+    "main.4cfe5c6e.js.map": "/wedding-invitation/static/js/main.4cfe5c6e.js.map",
     "453.40063271.chunk.js.map": "/wedding-invitation/static/js/453.40063271.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f3db3c7.css",
-    "static/js/main.a20152a6.js"
+    "static/css/main.1d76ea32.css",
+    "static/js/main.4cfe5c6e.js"
   ]
 }
