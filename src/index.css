@@ -175,7 +175,8 @@ code {
 
 @media (max-width: 500px) {
   .middle-bordered {    
-    width:150px ;    
+    width:135px ;  
+    font-size: 20px;  
   }
 
   .invitation-background{

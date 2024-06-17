@@ -158,6 +158,7 @@ const styles={
         },
         numberSmall:{
             fontFamily:font,
+            fontSize:40,
             color:textColor,
             fontWeight:fontWeight,
             padding:0       
