@@ -27,9 +27,7 @@ function App() {
         <h5 style={{fontWeight:'300'}} >Προαιρετική λίστα γάμου</h5>
         <h5 style={{margin:10, marginBottom:50}}>Τράπεζα Πειραιώς: GR94 0172 1480 0051 4811 2302 021
         </h5>
-        <Spotify style={{width:'80%', maxWidth:650, marginBottom:40}} wide link="https://open.spotify.com/track/6usohdchdzW9oML7VC4Uhk?si=658d75b211314a7d" />
-
-
+        <Spotify style={{width:'80%', maxWidth:650, marginBottom:40}} wide link="https://open.spotify.com/track/6usohdchdzW9oML7VC4Uhk?si=658d75b211314a7d?autoplay=1" />
       </header>
     </div>
   );

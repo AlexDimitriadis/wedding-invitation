@@ -111,6 +111,12 @@ code {
   flex-direction:row;
 }
 
+.map-container{
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 5px;
+  padding:15px;
+}
+
 .separator{
   width:2px;
   height:360px;

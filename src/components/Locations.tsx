@@ -10,7 +10,7 @@ interface LocationProps {
 
 const PortTabs : React.FC = ({}) => {
  return(
-    <div style={{ maxWidth:700, display:'flex', width:'90%'}}>
+    <div style={{ maxWidth:650, display:'flex', width:'90%'}}>
         
         <Tabs style={{backgroundColor:'rgba(0,0,0,0.3)',padding:25, borderRadius:5, width:'100%'}}>
             <TabList>
@@ -75,15 +75,15 @@ const ListItemStyle={
 const Locations: React.FC<LocationProps> = ({ url }) => {
     
     return (
-        <div>
+        <div style={{width:'90%', maxWidth:650}}>
 
-            <div className="block">
+            <div className="map-container">
 				<h4>Ιερός Ναός Κοιμήσεως Θεοτόκου</h4> 
                 <h5>Mitilinis, Αργοναυτών &, Αιάντειο</h5>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6294.433887341614!2d23.462533113168103!3d37.925362001355644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1b5d03088bf2b%3A0x13d07351b3bac6b6!2zzpnOtc-Bz4zPgiDOnc6xz4zPgiDOms6_zq_OvM63z4POt8-CIM6kzrfPgiDOmM61zr_PhM-MzrrOv8-F!5e0!3m2!1sel!2sgr!4v1712508625316!5m2!1sel!2sgr" 
                 max-width="650" width="90%" height="450" />
             </div>
-            <div style={{marginTop:25}}>
+            <div className="map-container" style={{marginTop:25}}>
                 <h4>Κτήμα Φιλιππικόν</h4> 
                 <h5>Φιλίππων 4, Αιάντειο 189 03</h5>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5294.646055713334!2d23.43828866557003!3d37.90202813448954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1b58f902f78f5%3A0xfd69fee9036fdf88!2zzprPhM6uzrzOsSDOps65zrvOuc-Az4DOuc66z4zOvQ!5e0!3m2!1sel!2sgr!4v1712504090120!5m2!1sel!2sgr"
