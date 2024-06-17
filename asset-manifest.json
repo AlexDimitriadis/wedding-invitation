@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/alexdimitriadis.github.io/wedding-invitation/static/css/main.b866396c.css",
+    "main.js": "/alexdimitriadis.github.io/wedding-invitation/static/js/main.5b8e951b.js",
+    "static/js/453.40063271.chunk.js": "/alexdimitriadis.github.io/wedding-invitation/static/js/453.40063271.chunk.js",
+    "static/media/paper-texture-2.jpg": "/alexdimitriadis.github.io/wedding-invitation/static/media/paper-texture-2.39143d5e0e0f92bf38bd.jpg",
+    "static/media/carousel3.jpg": "/alexdimitriadis.github.io/wedding-invitation/static/media/carousel3.935d14ce1fa5967f3b22.jpg",
+    "static/media/carousel2.jpg": "/alexdimitriadis.github.io/wedding-invitation/static/media/carousel2.68421476768d453fe381.jpg",
+    "static/media/carousel1.png": "/alexdimitriadis.github.io/wedding-invitation/static/media/carousel1.d1396592a76fb949902b.png",
+    "static/media/flower_deco-wc.png": "/alexdimitriadis.github.io/wedding-invitation/static/media/flower_deco-wc.44aa3794cc9ae8e78f5e.png",
+    "static/media/Miama.ttf": "/alexdimitriadis.github.io/wedding-invitation/static/media/Miama.3637ff4c480fa17ac93d.ttf",
+    "static/media/Slimamif-2RG8.ttf": "/alexdimitriadis.github.io/wedding-invitation/static/media/Slimamif-2RG8.aaece189bad3d38cc06c.ttf",
+    "static/media/FoulisGreek-3Wry.ttf": "/alexdimitriadis.github.io/wedding-invitation/static/media/FoulisGreek-3Wry.f1413806bdc06c716df5.ttf",
+    "static/media/RomanceFatalW1G.ttf": "/alexdimitriadis.github.io/wedding-invitation/static/media/RomanceFatalW1G.5133d7405692a73d672c.ttf",
+    "static/media/VAG-HurryPen.otf": "/alexdimitriadis.github.io/wedding-invitation/static/media/VAG-HurryPen.eaf43a60702514998e7e.otf",
+    "static/media/wedding-rings_white.svg": "/alexdimitriadis.github.io/wedding-invitation/static/media/wedding-rings_white.6f7b863ca7925822e43f8397362f97d6.svg",
+    "index.html": "/alexdimitriadis.github.io/wedding-invitation/index.html",
+    "main.b866396c.css.map": "/alexdimitriadis.github.io/wedding-invitation/static/css/main.b866396c.css.map",
+    "main.5b8e951b.js.map": "/alexdimitriadis.github.io/wedding-invitation/static/js/main.5b8e951b.js.map",
+    "453.40063271.chunk.js.map": "/alexdimitriadis.github.io/wedding-invitation/static/js/453.40063271.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b866396c.css",
+    "static/js/main.5b8e951b.js"
+  ]
+}
