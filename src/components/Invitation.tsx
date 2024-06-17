@@ -76,9 +76,12 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
         <img className='flower-deco' src={flowerDeco} style={{ color:'white'}} />
 
         <div style={styles.backSection.container}>
-            <p style={styles.backSection.simpleText}>Θα χαρούμε να παρευρεθείτε στο γάμο μας</p>
+            {/* <p style={styles.backSection.simpleText}>Θα χαρούμε να παρευρεθείτε στο γάμο μας</p>
             <p style={styles.backSection.simpleText} >που θα γίνει το Σάββατο 31 Αυγούστου στις 18:30</p>
-            <p style={styles.backSection.simpleText}>στον Ι.Ν. Κοιμήσεως της Θεοτόκου Σαλαμίνας</p>
+            <p style={styles.backSection.simpleText}>στον Ι.Ν. Κοιμήσεως της Θεοτόκου Σαλαμίνας</p> */}
+            <p style={styles.backSection.simpleText} >Θα χαρούμε να παρευρεθείτε στο γάμο μας
+            που θα γίνει το Σάββατο 31 Αυγούστου στις 18:30
+            στον Ι.Ν. Κοιμήσεως της Θεοτόκου Σαλαμίνας</p>
         </div>
         <div style={styles.backSection.container}>
             <p style={styles.backSection.simpleText}>Οι γονείς</p>
