@@ -67,12 +67,12 @@ interface DigitProps {
 const Digit: React.FC<DigitProps> = ({ number, label }) => {
    
     return (
-    <div style={styles.background}>
+    <div className='countdown-bg' style={styles.background}>
         <div style={styles.numberContainer}>
-            <p style={{fontSize:55, margin:0}}>{number}</p>
+            <p  className='countdown-digit' style={{margin:0}}>{number}</p>
         </div>
         <div style={styles.labelContainer}>
-            <p style={{fontSize:20,  color:"rgba(238,132,178)", verticalAlign:'center', margin:0}}>{label}</p>
+            <p  className='countdown-label' style={{color:"rgba(238,132,178)", verticalAlign:'center', margin:0}}>{label}</p>
         </div>
     </div>
     );
@@ -80,8 +80,9 @@ const Digit: React.FC<DigitProps> = ({ number, label }) => {
     
 const styles={
     background:{
-        height:180,
-        width:150,
+        //height:180,
+        // maxWidth:150,
+        // minWidth:50,
         dispay:'flex',
         background:'rgba(0,0,0,0.15)',
         borderRadius:10,

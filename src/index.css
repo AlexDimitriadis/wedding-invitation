@@ -55,7 +55,7 @@ code {
     background: #00000075;
     position: absolute;
     right: 1px;
-    bottom: 1px;
+    bottom: 200px;
     width: 75px;
     padding: 10px;
     height: 75px;
@@ -68,6 +68,137 @@ code {
   top:150px;
   mix-blend-mode:multiply;
   width:50%;
+}
+
+
+.middle-bordered {
+  margin:15px;
+  border:solid black;
+  border-width:2px 0px;
+  padding:5px;
+  width:200px  ;
+  color:black;
+}
+
+.carousel-caption-title {
+  font-size:100px
+}
+
+.invitation-background{
+  height:850px;
+  padding:40px;
+}
+
+.countdown-digit {
+  font-size:55px;
+}
+
+.countdown-digit {
+  font-size:55px;
+}
+
+.countdown-label {
+  font-size:20px;
+}
+
+.countdown-bg {
+  width:150px;
+  height:180px;
+}
+
+.port-tabpanel {
+  display:flex;
+  flex-direction:row;
+}
+
+.separator{
+  width:2px;
+  height:360px;
+  margin:0px 10px 0px 30px;
+  background-color:rgba(255,255,255,0.4);  
+}
+
+.port-info {
+  width:35%
+}
+
+.port-map{
+  width:60%;
+}
+
+
+@media (max-width: 700px) {
+  .middle-bordered {    
+    width:170x  ;    
+  }
+
+  .invitation-background{
+    height:auto;
+    padding:0px;
+  }
+
+  .port-tabpanel {
+    display:flex;
+    flex-direction:column;
+  }
+  .separator{
+    width: 250px;
+    height:2px;
+    margin:0px 10px 0px 30px;
+    background-color:rgba(255,255,255,0.4);  
+  }
+  .port-info {
+    width:100%
+  }
+  .port-map{
+    width:100%;
+  }
+ 
+  .carousel-caption-title {
+    font-size:85px;    
+  }
+
+  .countdown-digit {
+    font-size:45px;
+  }
+
+  .countdown-label {
+    font-size:17px;
+  }
+
+  .countdown-bg {
+    width:100px;
+    height:140px;
+  }  
+}
+
+
+@media (max-width: 500px) {
+  .middle-bordered {    
+    width:150px ;    
+  }
+
+  .invitation-background{
+    height:auto;
+    padding:0px;
+  }
+
+  .carousel-caption-title {
+    font-size:75px;    
+  }
+
+  .countdown-digit {
+    font-size:35px;
+  }
+
+  .countdown-label {
+    font-size:13px;
+  }
+
+  .countdown-bg {
+    width:75px;
+    height:120px;
+  }  
 }
 
 /* 

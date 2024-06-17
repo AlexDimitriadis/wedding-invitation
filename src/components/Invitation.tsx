@@ -23,7 +23,7 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
     }, []);
 
     return (
-      <div className="background" style={styles.background}>
+      <div className="invitation-background" style={styles.background}>
         {/* <img src={OliveBranch} style={{width:250, color:'white'}} /> */}
         <img  className="flower-deco" src={flowerDeco} style={{ color:'white'}} />
 
@@ -36,11 +36,13 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
         <h2 style={{...styles.middleSection.numberSmall, marginLeft:20}}>18:30</h2>
         <div style={styles.middleSection.container}>
             <div>
-                <h2 style={styles.middleSection.bordered}>ΣΑΒΒΑΤΟ</h2>  
+                <h2 className='middle-bordered' 
+                style={styles.middleSection.bordered}>ΣΑΒΒΑΤΟ</h2>  
             </div>
             <h1 style={styles.middleSection.number}>31</h1>
             <div>
-                <h2 style={styles.middleSection.bordered}>ΑΥΓΟΥΣΤΟΥ</h2>
+                <h2 className='middle-bordered' 
+                 style={styles.middleSection.bordered}>ΑΥΓΟΥΣΤΟΥ</h2>
             </div>
         </div>
         <h2 style={styles.middleSection.numberSmall}>2024</h2>
@@ -69,7 +71,7 @@ const InvitationFront:React.FC<InvitationFronProps> = ({onClick}) => {
     }, []);
 
     return (
-      <div className="background" style={styles.background}>
+      <div className="invitation-background" style={styles.background}>
         {/* <img src={OliveBranch} style={{width:250, color:'black'}} /> */}
         <img className='flower-deco' src={flowerDeco} style={{ color:'white'}} />
 
@@ -109,9 +111,9 @@ const styles={
         backgroundImage: `url(${watercolorBg})`, // Use template literal for clarity
         backgroundSize: 'cover', // Ensure image fills the entire div
         backgroundPosition: 'center', // Center the image within the div
-        // background:'#E6B1F4',
-        height:850,
-        width:650,
+        //height:850,
+        width:'100%',
+        maxWidth:650,
         marginTop:100,
         marginBottom:100,
         boxShadow: '0px 5px 10px rgba(0, 0, 0, 0.5)',
@@ -140,24 +142,15 @@ const styles={
             alignItems:'center',           
         },
         bordered:{
-            margin:15,
-            border:'solid',
-            borderTopWidth:2,
-            borderBottomWidth:2,
-            borderLeftWidth:0,
-            borderRightWidth:0,
+          
             borderColor:textColor,
-            padding:5,
-            width:200  ,
-            fontFamily:font,
+            fontFamily:'FoulisGreek',
             color:textColor ,
             fontWeight:fontWeight          
 
         },
         number:{
             fontSize:100,
-            
-            //fontWeight:'200',
             fontFamily:font,
             color:textColor,
             fontWeight:fontWeight          
@@ -181,6 +174,7 @@ const styles={
             //fontSize:25,
             fontSize:36,
             margin:0,
+            paddingBottom:50,
             fontWeight:fontWeight          
 
             
@@ -228,14 +222,14 @@ const Card: React.FC<CardProps> = ({ onClick }) => {
     const [flip, setFlip] = useState(false);
 
     return (
-        <ReactCardFlip isFlipped={flip}
-        flipDirection="horizontal">
-       
-            <InvitationFront onClick={() => setFlip(!flip)}/>          
-           
-            <InvitationBack onClick={() => setFlip(!flip)}/>
-            
-    </ReactCardFlip>
+        <div style={{display:'flex', 
+        width:'90%',
+        justifyContent:'center'}} >
+            <ReactCardFlip isFlipped={flip}  flipDirection="horizontal">       
+                <InvitationFront onClick={() => setFlip(!flip)}/>
+                <InvitationBack onClick={() => setFlip(!flip)}/>            
+            </ReactCardFlip>
+        </div>
     );
   }
 

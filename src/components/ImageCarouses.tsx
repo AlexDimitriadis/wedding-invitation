@@ -15,7 +15,7 @@ const font2 = "Dancing Script";
 const CarouselCaption = () => {
     const captionStyles = { 
         title:{
-            fontSize:100, 
+            //fontSize:100, 
             fontFamily:font2,
             color:'rgba(255,255,255,0.4)'
         },
@@ -31,8 +31,8 @@ const CarouselCaption = () => {
   
     return (
       <Carousel.Caption>
-        <h1 style={captionStyles.title}>Our  </h1>
-        <h1 style={captionStyles.title}>Wedding</h1>
+        <h1 className='carousel-caption-title' style={captionStyles.title}>Our  </h1>
+        <h1 className='carousel-caption-title' style={captionStyles.title}>Wedding</h1>
         {/* <img src={WeddingRings} style={{width:250, opacity:0.5}} /> */}
         <img src={WeddingRingsWhite} style={{width:225, opacity:0.5}} />
         <p style={captionStyles.subtitle}>31/08/24</p>
@@ -43,7 +43,9 @@ const CarouselCaption = () => {
 
 function ImageCarousel() {
   return (
-    <Carousel style={{width:'90%', maxWidth:650, height:'90%', maxHeight:900, margin:20}}>
+    <div style={{display:'flex', width:'100%', justifyContent:'center'}} >
+
+    <Carousel style={{width:'90%', maxWidth:650, height:'90%', maxHeight:900, margin:10}}>
       <Carousel.Item>
         <ImageDiv number={1} />
         <Carousel.Caption>
@@ -63,6 +65,7 @@ function ImageCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 
